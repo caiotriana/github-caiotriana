@@ -61,6 +61,15 @@ const Header = styled.header`
             text-decoration : none;
             cursor : pointer;
             user-select: none;
+            
+            &-isOpen { 
+            animation : ${inHorizontal} 400ms;
+            opacity : 1;
+            }
+            &-isClose { 
+              animation : ${outHorizontal} 400ms;
+              opacity : 0;
+            }
           }
 
         &-menu { 

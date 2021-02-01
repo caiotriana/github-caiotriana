@@ -50,8 +50,10 @@ function Home() {
             </ul>
             <div className={'Header-content-right-button'} onClick={handleClickToOpenMenu}>
               {
-                isOpenMenu ? <span class="material-icons">remove</span>
-                  : <span class="material-icons">add</span>
+                <>
+                <span class={`material-icons  Header-content-right-button-${isOpenMenu ? 'isOpen' : 'isClose'}`}>remove</span>
+                <span class={`material-icons  Header-content-right-button-${isOpenMenu ? 'isClose' : 'isOpen'}`}>add</span>
+                </>
               }
             </div>
         </div>  
